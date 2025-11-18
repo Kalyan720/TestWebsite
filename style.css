@@ -1,0 +1,97 @@
+/* -------- RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* -------- BACKGROUND -------- */
+body {
+    background: #000; /* pure black */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------- LOGIN CARD -------- */
+.login-container {
+    width: 380px;
+    padding: 40px 35px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.25);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* -------- TITLE -------- */
+.login-form h2 {
+    text-align: center;
+    color: #00ff80; /* soft neon green */
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* -------- LABELS -------- */
+.login-form label {
+    display: block;
+    margin-top: 15px;
+    color: #4aff4a; /* lighter green */
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* -------- INPUTS -------- */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #00aa00;
+    background: #0a0a0a;
+    color: #a6ffaa; /* soft mint */
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.login-form input:focus {
+    border-color: #00ff00;
+    box-shadow: 0 0 6px #00ff00;
+    background: #111;
+}
+
+/* -------- BUTTON -------- */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #00ff55;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #00cc44;
+    box-shadow: 0 0 12px #00ff55;
+    transform: translateY(-2px);
+}
+
+/* -------- ANIMATIONS -------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
